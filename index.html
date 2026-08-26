@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- 1. Greeting & Waktu -->
+        <section id="greeting-section">
+            <h1 id="time-display">00:00:00</h1>
+            <h2 id="greeting-text">Selamat Pagi</h2>
+        </section>
+
+        <!-- 2. Focus Timer (Pomodoro) -->
+        <section id="timer-section">
+            <h3>Focus Timer</h3>
+            <div id="timer-display">25:00</div>
+            <div class="timer-buttons">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </section>
+
+        <!-- 3. To-Do List -->
+        <section id="todo-section">
+            <h3>To-Do List</h3>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Tambah tugas baru..." required>
+                <button type="submit">Tambah</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <!-- 4. Quick Links -->
+        <section id="links-section">
+            <h3>Quick Links</h3>
+            <div id="quick-links">
+                <a href="https://google.com" target="_blank" class="quick-link-btn">Google</a>
+                <a href="https://github.com" target="_blank" class="quick-link-btn">GitHub</a>
+                <a href="https://youtube.com" target="_blank" class="quick-link-btn">YouTube</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
